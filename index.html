@@ -17,6 +17,7 @@
             background: var(--bgcolor);
             overflow: hidden;
             font-family: Arial, Helvetica, sans-serif;
+            color: var(--text-color);
         }
 
         div#page-content {
@@ -29,7 +30,6 @@
         div#nothing-here {
             padding: 40px;
             text-align: center;
-            color: var(--text-color);
         }
 
         div#nothing-here h1 {
@@ -41,17 +41,26 @@
         }
     </style>
 
+    <script>
+        const colors = ['#093145', '#107896', '#829356', '#BCA136', '#C2571A', '#9A2617']
+
+        function randomColor() {
+            const i = Math.floor(Math.random() * colors.length)
+            document.body.style.backgroundColor = colors[i]
+        }
+
+        document.addEventListener("DOMContentLoaded", randomColor);
+    </script>
+
 </head>
 
-<body>
-
+<body >
     <div id="page-content">
         <div id="nothing-here">
             <h1>There is nothing here!</h1>
             <p>Maybe coming soon… or maybe not.</p>
         </div>
     </div>
-
 </body>
 
 </html>
