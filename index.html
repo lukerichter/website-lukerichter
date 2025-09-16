@@ -2,65 +2,25 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        :root {
-            --bgcolor: rgb(19, 56, 36);
-            --text-color: rgb(255, 255, 255);
-        }
-
-        body {
-            margin: 0;
-            background: var(--bgcolor);
-            overflow: hidden;
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--text-color);
-        }
-
-        div#page-content {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        div#nothing-here {
-            padding: 40px;
-            text-align: center;
-        }
-
-        div#nothing-here h1 {
-            font-size: 2.5em;
-        }
-
-        div#nothing-here p {
-            font-size: 1.2em;
-        }
-    </style>
-
-    <script>
-        const colors = ['#093145', '#107896', '#829356', '#BCA136', '#C2571A', '#9A2617']
-
-        function randomColor() {
-            const i = Math.floor(Math.random() * colors.length)
-            document.body.style.backgroundColor = colors[i]
-        }
-
-        document.addEventListener("DOMContentLoaded", randomColor);
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
 
 </head>
 
-<body >
+<body>
+
     <div id="page-content">
         <div id="nothing-here">
             <h1>There is nothing here!</h1>
             <p>Maybe coming soon… or maybe not.</p>
         </div>
     </div>
+
 </body>
 
 </html>

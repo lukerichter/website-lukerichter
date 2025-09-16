@@ -1,0 +1,33 @@
+:root {
+            --bgcolor: rgb(19, 56, 36);
+            --text-color: rgb(255, 255, 255);
+        }
+
+        body {
+            margin: 0;
+            background: var(--bgcolor);
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text-color);
+            letter-spacing: 1px;
+        }
+
+        div#page-content {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#nothing-here {
+            padding: 40px;
+            text-align: center;
+        }
+
+        div#nothing-here h1 {
+            font-size: 2.5em;
+        }
+
+        div#nothing-here p {
+            font-size: 1.2em;
+        }
