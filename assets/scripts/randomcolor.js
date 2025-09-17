@@ -5,4 +5,4 @@ function randomColor() {
     document.body.style.backgroundColor = colors[i]
 }
 
-document.addEventListener("DOMContentLoaded", randomColor);
+randomColor()
