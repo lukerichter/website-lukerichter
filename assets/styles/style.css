@@ -4,7 +4,7 @@ body {
     margin: 0;
     color: white;
     letter-spacing: 1px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
 }
 
 div#page-content {
@@ -14,14 +14,24 @@ div#page-content {
     align-items: center;
 }
 
-div#nothing-here {
+div#new-content {
     text-align: center;
+    font-size: 4em;
 }
 
-div#nothing-here h1 {
-    font-size: 2.5em;
+div#new-content p {
+    margin: 20px;
 }
 
-div#nothing-here p {
-    font-size: 1.2em;
+div#new-content div#counter {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    div#new-content {
+        font-size: 2em;
+    }
 }
